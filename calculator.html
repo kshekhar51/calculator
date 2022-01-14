@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +9,47 @@
     <link href="https://fonts.googleapis.com/css?
     family=open=sans:600,700" rel="stylesheet">
     <title>Simple calculator</title>
+<script src="calc.js"></script>
 </head>
+
 <body>
-    <div id="container">
-        <div class="box">
-            <p class="boxmodelcss">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci corrupti fugit vel qui. Quos quis, quam atque praesentium similique dolorem distinctio aut repellendus. Explicabo consectetur quasi pariatur, quo et corporis?
-            Iste sint rerum possimus voluptatem delectus hic eius porro sed error pariatur non optio cumque, maiores ipsa numquam laudantium dolorum! Rerum debitis accusamus excepturi esse facilis sit nesciunt iste saepe.
-            Labore ducimus tempore quisquam doloribus sequi laboriosam quis illo dicta, nesciunt sit placeat dolor, magni consequuntur nostrum ipsa maiores illum officiis voluptatum. Soluta, qui exercitationem pariatur voluptatem in aut nulla!
-            Exercitationem voluptas ea consectetur harum eum corporis, laboriosam porro provident sit? Nesciunt accusamus aliquid voluptatum, inventore placeat ipsum magni. Nostrum laudantium amet aut iure molestiae explicabo commodi, facere possimus expedita?
-            Numquam ipsa enim quaerat a eligendi id. At omnis doloremque nam nostrum, nesciunt voluptates. Ad sit distinctio aspernatur, optio expedita vel officiis perferendis. Voluptates nesciunt aperiam temporibus enim eaque quo.
-            Iure itaque inventore sunt perferendis quisquam nemo consequatur soluta. Nobis commodi odio tempore, dolore vero dicta consequatur quibusdam illo sunt et, tenetur laudantium quaerat atque accusantium eveniet architecto odit. Tempora?
-            Enim illo molestias harum soluta vel sit, blanditiis perspiciatis aperiam? Dolorum non sunt reprehenderit. Dicta consequatur, id reiciendis libero voluptates facere a fugit eaque aspernatur. Dolorum vero numquam reprehenderit mollitia!
-            Quod distinctio iure doloribus unde error quia, magnam non eligendi ea, enim quidem. Numquam, tempore praesentium fugiat culpa veniam voluptate dolore cupiditate rem dicta porro. Vero placeat tempora voluptatibus sint!
-            Voluptatibus quos iusto alias consectetur perspiciatis id nostrum error ipsum! Officiis nobis incidunt ipsam? Accusamus optio doloremque at consequatur ea temporibus ducimus, amet, consectetur suscipit quaerat officia nobis velit. Tenetur.
-            Aspernatur at illo exercitationem impedit consectetur est cupiditate laboriosam sequi nostrum deleniti obcaecati vitae maiores aut natus inventore quod, facere quo ad odio, corporis rem illum ducimus praesentium nam. Nesciunt.</p>
-        </div>
-        <p>Hello I am new to github!</p>
+    <div class="box">
+    <div class = title >My Calculator</div>
+      <table border="1">
+         <tr>
+            <td colspan="3"><input type="text" id="result"/></td>
+            <!-- clr() function will call clr to clear all value -->
+            <td><input type="button" value="c" onclick="clr()"/> </td>
+         </tr>
+         <tr>
+            <!-- create button and assign value to each button -->
+            <!-- dis("1") will call function dis to display value -->
+            <td><input type="button" value="1" onclick="dis('1')"/> </td>
+            <td><input type="button" value="2" onclick="dis('2')"/> </td>
+            <td><input type="button" value="3" onclick="dis('3')"/> </td>
+            <td><input type="button" value="/" onclick="dis('/')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="4" onclick="dis('4')"/> </td>
+            <td><input type="button" value="5" onclick="dis('5')"/> </td>
+            <td><input type="button" value="6" onclick="dis('6')"/> </td>
+            <td><input type="button" value="-" onclick="dis('-')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="7" onclick="dis('7')"/> </td>
+            <td><input type="button" value="8" onclick="dis('8')"/> </td>
+            <td><input type="button" value="9" onclick="dis('9')"/> </td>
+            <td><input type="button" value="+" onclick="dis('+')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="." onclick="dis('.')"/> </td>
+            <td><input type="button" value="0" onclick="dis('0')"/> </td>
+            <!-- solve function call function solve to evaluate value -->
+            <td><input type="button" value="=" onclick="solve()"/> </td>
+            <td><input type="button" value="*" onclick="dis('*')"/> </td>
+         </tr>
+      </table>
     </div>
-    <script src="script.js"></script>
 </body>
+
 </html>
